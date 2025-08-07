@@ -7,79 +7,32 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../static/img/logo-nav.png" alt="Logo Prime" class="logo">
-                <!-- <img src="../static/img/logo-icone.png" alt="Logo Prime" class="logo-icone"> -->
+    <header>
+        <div class="hero">
+            <div class="hero-center">
+            <nav class="navbar">
+                <img src="../static/img/logo-nav.png" alt="Logo" class="logo" />
+                
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                    <li><a href="#">SERVIÇOS</a></li>
+                    <li><a href="#">LOCALIZAÇÃO</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#">ÁREA DO CLIENTE</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero-content">
+                <h1>Contabilidade com foco no crescimento da sua empresa</h1>
+                <p>Com a Prime Contabilidade, você tem à disposição uma equipe de especialistas que cuida de toda a parte contábil e tributária do seu negócio. Nós entendemos que cada empresa tem suas necessidades, e é por isso que oferecemos soluções personalizadas para o crescimento do seu empreendimento!</p>
+                <a href="#" class="hero-btn">FALE COM UM ESPECIALISTA</a>
             </div>
-            <div class="menu-icon" id="menu-icon">&#9776;</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Contabilidade com foco no crescimento da sua empresa</h1>
-            <p>Com a Prime Contabilidade, você tem à disposição uma equipe de especialistas que cuida de toda a parte contábil e tributária do seu negócio. Nós entendemos que cada empresa tem suas necessidades, e é por isso que oferecemos soluções personalizadas para o crescimento do seu empreendimento!</p>
-            <a href="#" class="hero-btn">FALE COM UM ESPECIALISTA</a>
-        </div>
-  </header>
-    <!-- <section class="inicio">
-        <div class="img-fundo"></div>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../static/img/logo-nav.png">
-            </div>
-            <ul>
-                <li><a href="">INICIO</a></li>
-                <li><a href="">SOBRE NÓS</a></li>
-                <li><a href="">SERVIÇOS</a></li>
-                <li><a href="">LOCALIZAÇÃO</a></li>
-                <li><a href="">CONTATO</a></li>
-                <li><a href="">ÁREA DO CLIENTE</a></li>
-            </ul>
-        </nav>
-        <div class="texto-inicial">
-            <h1>Contabilidade com foco no crescimento da sua empresa</h1>
-            <p>
-            Com a Prime Contabilidade, você tem à disposição uma equipe<br>
-            de especialistas que cuida de toda a parte contábil e tributária<br>
-            do seu negócio. Nós entendemos que cada empresa tem suas<br>
-            necessidades, e é por isso que oferecemos soluções<br>
-            personalizadas para o crescimento do seu empreendimento!
-            </p>
-            <button><a href="https://primecontabil.my.canva.site/">FALE COM UM ESPECIALISTA</a></button>
-        </div>
-    </section> -->
-    <!-- <section class="sobre-nos">
-        <div class="barras">
-            <div class="barra-azul"></div>
-            <div class="barra-amarela"></div>
-        </div>
-        <div class="conteudo">    
-            <div class="texto">
-                <h1>SOBRE NÓS</h1>
-                <p>Na Prime Contabilidade, somos uma<br>
-                quipe de profissionais dedicados a<br>
-                fornecer soluções contábeis completas e<br>
-                personalizadas para empresas e<br>
-                indivíduos.<br>
-                Com anos de experiência no mercado,<br>
-                nosso compromisso é oferecer serviços<br>
-                que garantam segurança, eficiência e<br>
-                conformidade fiscal, sempre com um<br>
-                atendimento próximo e de qualidade.
-                </p>
-                <button class="saiba-mais"><a href="">SAIBA MAIS</a></button>
-            </div>
-            <div class="faxada">
-                <img src="../static/img/faxada-prime.png">
             </div>
         </div>
-    </section> -->
+    </header>
     <section class="sobre-nos">
         <div class="container">
                 <div class="texto">
@@ -101,13 +54,53 @@
                 </div>
         </div>
     </section>
-    <script>
-        const menuIcon = document.getElementById("menu-icon");
-        const navLinks = document.getElementById("nav-links");
+    <section class="servicos">
+    <div class="container">
+      <div class="servicos-topo">
+        <div class="decoracao">
+          <span class="linha azul"></span>
+          <span class="linha amarela"></span>
+        </div>
+        <h2>CONTE COM A PRIME CONTABILIDADE</h2>
+        <a href="#" class="btn-servicos">Ver todos os serviços</a>
+      </div>
 
-        menuIcon.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    </script>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone Gestão RH">
+          <h3>Gestão RH</h3>
+          <p>
+            Deixe a gestão de pessoas com quem entende do assunto! Cuidamos da folha de pagamento, admissões, demissões e encargos trabalhistas, garantindo conformidade e eficiência para sua empresa.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2519/2519278.png" alt="Ícone Abertura de empresas">
+          <h3>Abertura de empresas</h3>
+          <p>
+            Damos o primeiro passo para o seu sucesso! Cuidamos de toda a burocracia para a abertura do seu CNPJ, garantindo que sua empresa esteja regularizada de forma rápida e segura.
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ícone Declaração IR">
+          <h3>Declaração IR</h3>
+          <p>
+            Facilitamos a emissão de notas fiscais para que seu negócio funcione sem complicações. Tenha controle total e cumpra todas as obrigações fiscais com praticidade e segurança.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.querySelector(".menu-icon");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (menuIcon && navMenu) {
+      menuIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    }
+  });
+</script>
 </body> 
 </html>
