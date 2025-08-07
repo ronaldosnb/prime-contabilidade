@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <section class="inicio">
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../static/img/logo-nav.png" alt="Logo Prime" class="logo">
+                <!-- <img src="../static/img/logo-icone.png" alt="Logo Prime" class="logo-icone"> -->
+            </div>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Contabilidade com foco no crescimento da sua empresa</h1>
+            <p>Com a Prime Contabilidade, você tem à disposição uma equipe de especialistas que cuida de toda a parte contábil e tributária do seu negócio. Nós entendemos que cada empresa tem suas necessidades, e é por isso que oferecemos soluções personalizadas para o crescimento do seu empreendimento!</p>
+            <a href="#" class="hero-btn">FALE COM UM ESPECIALISTA</a>
+        </div>
+  </header>
+    <!-- <section class="inicio">
         <div class="img-fundo"></div>
         <nav class="navbar">
             <div class="logo">
@@ -33,6 +53,61 @@
             </p>
             <button><a href="https://primecontabil.my.canva.site/">FALE COM UM ESPECIALISTA</a></button>
         </div>
+    </section> -->
+    <!-- <section class="sobre-nos">
+        <div class="barras">
+            <div class="barra-azul"></div>
+            <div class="barra-amarela"></div>
+        </div>
+        <div class="conteudo">    
+            <div class="texto">
+                <h1>SOBRE NÓS</h1>
+                <p>Na Prime Contabilidade, somos uma<br>
+                quipe de profissionais dedicados a<br>
+                fornecer soluções contábeis completas e<br>
+                personalizadas para empresas e<br>
+                indivíduos.<br>
+                Com anos de experiência no mercado,<br>
+                nosso compromisso é oferecer serviços<br>
+                que garantam segurança, eficiência e<br>
+                conformidade fiscal, sempre com um<br>
+                atendimento próximo e de qualidade.
+                </p>
+                <button class="saiba-mais"><a href="">SAIBA MAIS</a></button>
+            </div>
+            <div class="faxada">
+                <img src="../static/img/faxada-prime.png">
+            </div>
+        </div>
+    </section> -->
+    <section class="sobre-nos">
+        <div class="container">
+                <div class="texto">
+                    <div class="linha-topo">
+                        <div class="linha azul"></div>
+                        <div class="linha amarela"></div>
+                    </div>
+                    <h2>SOBRE NÓS</h2>
+                    <p>
+                        Na Prime Contabilidade, somos uma equipe de profissionais dedicados a fornecer soluções contábeis completas e personalizadas para empresas e indivíduos.
+                        <br><br>
+                        Com anos de experiência no mercado, nosso compromisso é oferecer serviços que garantam segurança, eficiência e conformidade fiscal, sempre com um atendimento próximo e de qualidade.
+                    </p>
+                    <button class="botao">SAIBA MAIS</button>
+                </div>
+
+                <div class="imagem">
+                    <img src="../static/img/faxada-prime.png" alt="fachada prime">
+                </div>
+        </div>
     </section>
-</body>
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const navLinks = document.getElementById("nav-links");
+
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body> 
 </html>

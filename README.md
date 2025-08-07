@@ -14,8 +14,6 @@ Disponibilizar uma presença online profissional e confiável para o escritório
 - CSS3
 - Git & GitHub
 
-## 📂 Estrutura do Projeto
-
 ## 🔗 Funcionalidades
 
 - Layout responsivo
