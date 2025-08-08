@@ -14,7 +14,7 @@
 header {
     position: relative;
     /* height: auto; */
-    background: url(../img/fundo-inicio.jpg) no-repeat center center/cover;
+    background: url(../img/foto_fundo.webp) no-repeat center center/cover;
 }
 
 .hero {
@@ -37,7 +37,7 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 25, 50, 0.7);
+  background-color: rgba(0, 40, 81, 0.6);
   z-index: 1;
 }
 
