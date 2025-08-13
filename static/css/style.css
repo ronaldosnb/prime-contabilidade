@@ -11,7 +11,6 @@ html {
 
 header {
     position: relative;
-    /* height: auto; */
     background: url(../img/foto_fundo.webp) no-repeat center center/cover;
 }
 
