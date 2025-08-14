@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <title>PRIME ASSESSORIA CONTABIL</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
@@ -64,17 +65,17 @@
                 <div class="card">
                     <img src="../static/img/icone_png.webp" alt="Serviço Fiscal">
                     <h3>Contabilidade Fiscal</h3>
-                    <p>Facilitamos a emissão de notas fiscais para que seu negócio funcione sem complicações. Tenha controle total e cumpra todas as obrigações fiscais com praticidadee segurança.</p>
+                    <p>Mantenha sua empresa em dia com todas as obrigações fiscais. Cuidamos da apuração de impostos, entrega de declarações e oferecemos uma assessoria completa para garantir a conformidade do seu negócio e evitar surpresas.</p>
                 </div>
                 <div class="card">
                     <img src="../static/img/rh.png" alt="Departamento Pessoal">
                     <h3>Departamento Pessoal</h3>
-                    <p>Deixe a gestão de pessoas comquem entende do assunto! Cuidamos da folha de pagamento,admissões, demissões e encargos trabalhistas, garantindo conformidade e eficiência para suaempresa.</p>
+                    <p>Simplifique a gestão de seus funcionários. Realizamos o processamento da folha de pagamento, controle de admissões, férias, rescisões e toda a rotina trabalhista, garantindo que sua empresa esteja sempre em conformidade com a legislação.</p>
                 </div>
                 <div class="card">
                     <img src="../static/img/companhia.png" alt="Abertura de Empresas">
                     <h3>Abertura de Empresas</h3>
-                    <p>Damos o primeiro passo para o seusucesso! Cuidamos de toda aburocracia para a abertura do seu CNPJ, garantindo que sua empresa esteja regularizada de forma rápidae segura.</p>
+                    <p>Transforme seu sonho em realidade sem burocracia. Cuidamos de todo o processo de abertura da sua empresa, desde o registro nos órgãos competentes até a obtenção do CNPJ, para que você possa focar no que realmente importa: o seu negócio.</p>
                 </div>
             </div>
         </div>
@@ -87,7 +88,7 @@
                     <div class="linha amarela"></div>
                 </div>
                 <h2>LOCALIZAÇÃO</h2>
-                <p>Nosso escritório de contabilidade está <br> situado em uma área acessível, pronto <br> para atender suas necessidades contábeis <br> com eficiência e profissionalismo </p>
+                <p>Estamos localizados no centro da cidade, <br> em uma área de fácil acesso. Nossa equipe <br> está pronta para receber você e atender as <br>  suas necessidades. Sinta-se à vontade para <br> nos visitar e conhecer de perto nossos serviços.</p>
                 <h3>Endereço</h3>
                 <h4>Av. 25, n° 120 - Centro <br> Barretos - SP, 14780-330</h4>
                 <h3>Horários</h3>
@@ -117,11 +118,11 @@
                     </div>
                 </div>
             </div>
-            <form action="#" method="post" class="form-contato">
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <input type="email" name="email" placeholder="Whatsapp" required>
-                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <form action="#" method="post" class="form-contato" id="form-contato">
+                <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required>
+                <textarea name="message" id="message" placeholder="Sua Mensagem" required></textarea>
                 <button type="submit" class="btn-contato">Enviar</button>
             </form>
         </div>
@@ -147,4 +148,20 @@
             }
         });
     </script> 
+    <script>
+        (function(){
+            emailjs.init("JcY1GToA0VjFoxILz");
+        })();
+
+        document.getElementById("form-contato").addEventListener("submit", function(event){
+            event.preventDefault();
+
+            emailjs.sendForm("service_5c5btcp", "template_hrismgk", this)
+            .then(function() {
+                alert("Mensagem enviada com sucesso!");
+            }, function(error) {
+                alert("Erro ao enviar: " + JSON.stringify(error));
+            });
+        });
+    </script>
 </body>
