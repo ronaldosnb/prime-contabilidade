@@ -137,23 +137,23 @@
         </div>
     </footer>
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const menuIcon = document.querySelector(".menu-icon");
-        const navMenu = document.querySelector(".nav-menu");
-        const navLinks = document.querySelectorAll(".nav-menu a");
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navMenu = document.querySelector(".nav-menu");
+            const navLinks = document.querySelectorAll(".nav-menu a");
 
-        if (menuIcon && navMenu) {
-            menuIcon.addEventListener("click", () => {
-                navMenu.classList.toggle("active");
-            });
-            navLinks.forEach(link => {
-                link.addEventListener("click", () => {
-                    navMenu.classList.remove("active");
+            if (menuIcon && navMenu) {
+                menuIcon.addEventListener("click", () => {
+                    navMenu.classList.toggle("active");
                 });
-            });
-        }
-    });
-</script> 
+                navLinks.forEach(link => {
+                    link.addEventListener("click", () => {
+                        navMenu.classList.remove("active");
+                    });
+                });
+            }
+        });
+    </script> 
     <script>
         (function(){
             emailjs.init("JcY1GToA0VjFoxILz");
@@ -162,9 +162,12 @@
         document.getElementById("form-contato").addEventListener("submit", function(event){
             event.preventDefault();
 
-            emailjs.sendForm("service_5c5btcp", "template_hrismgk", this)
+            let form = this;
+
+            emailjs.sendForm("service_5c5btcp", "template_hrismgk", form)
             .then(function() {
                 alert("Mensagem enviada com sucesso!");
+                form.reset();
             }, function(error) {
                 alert("Erro ao enviar: " + JSON.stringify(error));
             });
