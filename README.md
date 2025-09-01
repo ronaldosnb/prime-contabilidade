@@ -1,33 +1,36 @@
-# Prime Contabilidade
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-🚧 Projeto em desenvolvimento. Funcionalidades podem mudar a qualquer momento. 🚧
+## Getting Started
 
-Site institucional desenvolvido para o escritório **Prime Assessoria Contabil**, com o objetivo de apresentar seus serviços, valores e facilitar o contato com clientes.
+First, run the development server:
 
-## 📌 Objetivo
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Disponibilizar uma presença online profissional e confiável para o escritório, promovendo os serviços de contabilidade, consultoria e atendimento personalizado.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🛠️ Tecnologias Utilizadas
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- HTML5
-- CSS3
-- Git & GitHub
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🔗 Funcionalidades
+## Learn More
 
-- Layout responsivo
-- Menu de navegação fixo
-- Página de apresentação institucional
-- Lista de serviços oferecidos
-- Página de contato com formulário
+To learn more about Next.js, take a look at the following resources:
 
-## 🧑‍💼 Público-alvo
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Empresas, profissionais autônomos e pequenos empreendedores em busca de serviços contábeis eficientes.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🚀 Como visualizar
+## Deploy on Vercel
 
-O site está temporaria mente rodando em uma hospedagem do canva até que esteja comcluído 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Acesse: https://primecontabil.my.canva.site/
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
