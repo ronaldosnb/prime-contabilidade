@@ -316,6 +316,7 @@ header::before {
   text-align: center;
   transition: transform 0.3s;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
