@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/ferramentas.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../static/img/logo-nav.png" alt="Logo" class="logo" />
+        <div class="menu-icon" id="menu-icon">&#9776;</div>              
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#sobre-nos">SOBRE NÓS</a></li>
+            <li><a href="#servicos">SERVIÇOS</a></li>
+            <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+            <li><a href="https://vip.acessorias.com/primeassessoriacontabilsp">ÁREA DO CLIENTE</a></li>
+        </ul> 
+    </nav>
+</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navMenu = document.querySelector(".nav-menu");
+            const navLinks = document.querySelectorAll(".nav-menu a");
+
+            if (menuIcon && navMenu) {
+                menuIcon.addEventListener("click", () => {
+                    navMenu.classList.toggle("active");
+                });
+                navLinks.forEach(link => {
+                    link.addEventListener("click", () => {
+                        navMenu.classList.remove("active");
+                    });
+                });
+            }
+        });
+    </script> 
+</html>
