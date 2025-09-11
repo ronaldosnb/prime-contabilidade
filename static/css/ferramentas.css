@@ -75,10 +75,11 @@
     }
   }
 /* ---------CARDS--------- */
+
 .container-cards {
   background-color: #f9f9f9;  
   padding: 40px;  
-  font-family: "poppins", sans-serif; 
+  font-family: "poppins", sans-serif;
 }
 .container-cards .card {
   display: flex;
@@ -125,6 +126,11 @@
   margin: 0;
   font-weight: 600;
   font-size: 0.9rem;
+}
+@media (max-width: 559px) {
+  .card a {
+  width: 100%;
+  }
 }
 /* ---------FOOTER--------- */
 .crc {
