@@ -17,7 +17,6 @@ Disponibilizar uma presença online profissional e confiável para o escritório
 ## 🔗 Funcionalidades
 
 - Layout responsivo
-- Menu de navegação fixo
 - Página de apresentação institucional
 - Lista de serviços oferecidos
 - Página de contato com formulário
@@ -28,6 +27,4 @@ Empresas, profissionais autônomos e pequenos empreendedores em busca de serviç
 
 ## 🚀 Como visualizar
 
-O site está temporaria mente rodando em uma hospedagem do canva até que esteja comcluído 
-
-Acesse: https://primecontabil.my.canva.site/
+Acesse: https://prime-assessoriacontabil.com/
